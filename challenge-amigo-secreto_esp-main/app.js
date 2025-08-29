@@ -3,6 +3,17 @@ let amigos = [];
 
 function agregarAmigo() {
   let amigo = document.getElementById('amigo').value;
-  amigos.push(amigo);
-  console.log(amigos);
+
+  if (amigo == '' || !(/^[a-zA-Z\s]+$/.test(amigo))) {
+    alert('Por favor, inserte un nombre');
+  } else {
+     amigos.push(amigo);
+     console.log(amigos);
+     limpiarEntrada();
+ }
 }
+      function limpiarEntrada() {
+        document.querySelector('#amigo').value = '';
+      };
+  
+    
