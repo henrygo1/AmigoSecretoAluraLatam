@@ -8,11 +8,15 @@ function agregarAmigo() {
     alert('Por favor, inserte un nombre');
   } else {
      amigos.push(amigo);
+     limpiarEntrada();
      console.log(amigos);
      
  }
 }
   
+      function limpiarEntrada() {
+        document.querySelector('#amigo').value = '';
+      };
 
 
     
