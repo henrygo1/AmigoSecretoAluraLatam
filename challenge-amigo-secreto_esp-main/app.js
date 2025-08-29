@@ -9,11 +9,10 @@ function agregarAmigo() {
   } else {
      amigos.push(amigo);
      console.log(amigos);
-     limpiarEntrada();
+     
  }
 }
-      function limpiarEntrada() {
-        document.querySelector('#amigo').value = '';
-      };
   
+
+
     
